@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Liu Jiaxiao · Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Hi, I'm <span class="accent">Liu&nbsp;Jiaxiao</span> 👋</h1>
+    <p class="subtitle">Cyber Security (M.S.) @ UTD · Dallas, TX</p>
+    <nav class="links">
+      <a href="https://github.com/jiaxiaoliu" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:">Email</a>
+      <a href="resume.pdf">Résumé</a>
+    </nav>
+  </header>
+
+  <main class="container grid">
+    <section class="card">
+      <h2>About</h2>
+      <p>
+        I'm an international student focusing on cybersecurity. I enjoy Python automation,
+        data analysis, and building clean, simple tools. This site is lightweight and
+        easy to edit—perfect for GitHub Pages.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Projects</h2>
+      <ul class="projects">
+        <li>
+          <strong>Notion Study Tracker</strong> — templates & scripts for bilingual
+          (中文/English) learning workflows.
+        </li>
+        <li>
+          <strong>Security+ Notes</strong> — concise exam prep notes and quizzes.
+        </li>
+        <li>
+          <strong>Python Automation</strong> — mini tools for CSV cleanup and reports.
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>
+        The fastest way to reach me is email. I'm open to study groups, internships,
+        and project collaborations.
+      </p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Liu Jiaxiao · Hosted with GitHub Pages</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
